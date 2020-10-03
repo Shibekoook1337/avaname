@@ -6,7 +6,7 @@
           <img :src="avatar" alt="avatar" class="avatar" />
         </div>
         <div class="formal_form">
-          <label for="name">enter name</label>
+          <label for="name">type your name in the box to get an illustration that matches it</label>
         <input
           v-model="name"
           type="text"
@@ -22,8 +22,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   name: "MainPage",
   data() {
@@ -76,6 +74,7 @@ button:hover {
 }
 
 img.avatar {
+  padding-bottom: 30px;
   width: 20%;
 }
 
